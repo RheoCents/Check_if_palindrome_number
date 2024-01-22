@@ -5,12 +5,10 @@
 
 user_input_number = input('Good day, please give me a number ')
 number_of_places_in_the_number = len(user_input_number)
+reversed_user_input_number = int(str(user_input_number)[::-1]) 
 print (number_of_places_in_the_number)
-negative_number_of_places_in_the_number = int(number_of_places_in_the_number) - int(number_of_places_in_the_number)*2 
-print (negative_number_of_places_in_the_number)
-
-for i in range (-1, negative_number_of_places_in_the_number, -1):
-    if user_input_number == user_input_number[i]:
-        print('The inputed number is a Palindrome number')
-    else:
-        print('The inputed number is a Palindrome number')
+quotient_of_original_and_reversed = int(user_input_number)/int(reversed_user_input_number)
+if  quotient_of_original_and_reversed == 1:
+    print('The inputed number is a Palindrome number')
+else:
+    print('The inputed number is a Palindrome number')
